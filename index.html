@@ -78,7 +78,8 @@
     .page {
       max-width: 1180px;
       margin: 0 auto;
-      padding: 24px;
+      /* extra horizontal padding to account for right-side box-shadows */
+      padding: 24px calc(24px + 14px);
     }
 
     .hero {
@@ -328,7 +329,8 @@
 
     @media (max-width: 560px) {
       .page {
-        padding: 14px;
+        /* keep equal left/right space including shadows on small screens */
+        padding: 14px calc(14px + 14px);
       }
 
       .hero-title {
@@ -419,7 +421,7 @@
           <p class="price">$100</p>
           <p>Get your own new ukulele & learn to play it.</p>
         </div>
-        <a class="button" href="https://canva.link/arpdq2tsyx2e1ve" target="_blank" rel="noopener">More Information</a>
+        <a class="button" href="https://canva.link/arpdq2tsyx2e1ve" target="_blank" rel="noopener">Register</a>
       </article>
 
       <article class="camp-card rock">
@@ -429,7 +431,7 @@
           <p class="price">$150</p>
           <p>Jam with others in a band.</p>
         </div>
-        <a class="button" href="https://canva.link/ghu20vxx16755v8" target="_blank" rel="noopener">More Information</a>
+        <a class="button" href="https://canva.link/ghu20vxx16755v8" target="_blank" rel="noopener">Register</a>
       </article>
 
       <article class="camp-card songwriting">
@@ -439,7 +441,7 @@
           <p class="price">$120</p>
           <p>Learn to write your own song.</p>
         </div>
-        <a class="button" href="https://canva.link/5r8celegpsunuh5" target="_blank" rel="noopener">More Information</a>
+        <a class="button" href="https://canva.link/5r8celegpsunuh5" target="_blank" rel="noopener">Register</a>
       </article>
 
       <article class="camp-card theater">
@@ -449,7 +451,7 @@
           <p class="price">$150</p>
           <p>Perform solo & in an ensemble.</p>
         </div>
-        <a class="button" href="https://canva.link/frk10bf101zs8ut" target="_blank" rel="noopener">More Information</a>
+        <a class="button" href="https://canva.link/frk10bf101zs8ut" target="_blank" rel="noopener">Register</a>
       </article>
     </section>
 
